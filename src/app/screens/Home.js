@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity,Dimensions} from 'react-native';
+import PicCard from '../components/Card';
 
 class Home extends Component {
 
     render() {
         return (
             <ScrollView >
-            <View style={styles.container}>
+                <View>
                 <TouchableOpacity  onPress={() => {this.props.navigation.navigate('Chat')}}>
-                <Text>focus</Text>
+                    <PicCard />
+                    <PicCard />
+                    <PicCard />
+                    <PicCard />
                 </TouchableOpacity>
                 </View>
+               
             </ScrollView>
             
         )
